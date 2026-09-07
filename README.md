@@ -1,14 +1,26 @@
-# Cohort-Repo-Template
-This is the core structure of Trailblazer Labs repos
-# [Project Name]
 
-![Project Banner](./assets/banner.png)
+# Automatic Deactivation of Inactive Salesforce Users
 
 ## Overview
-[1-2 sentences explaining exactly what this asset does and who it is for.]
+This solution automates the deactivation of Salesforce users who have not logged into the organization for a configurable number of days. The objective is to improve security, optimize license utilization, and ensure compliance with organizational access management policies.
+
+The process periodically evaluates active users by comparing their LastLoginDate against a predefined inactivity threshold. Users who exceed the specified number of inactive days are automatically identified and deactivated, while exempted accounts such as system administrators, integration users, or designated service accounts can be excluded through configurable criteria.
+
+The automation generates detailed logs and notifications to provide administrators with visibility into affected users and actions performed. By eliminating manual reviews and deactivation processes, this solution reduces administrative effort, minimizes security risks associated with dormant accounts, and helps maintain a clean and compliant Salesforce environment.
+
+Key features include:
+
+-Configurable inactivity period (X days).
+-Automatic scheduling through Apex Scheduler.
+-Exclusion of specific profiles, roles, or users.
+-Audit logging and email notifications.
+-Bulkified processing to support large organizations.
+-Compliance with Salesforce security and governance best practices.
+
+
 
 ## The Problem It Solves
-[Describe the pain point, manual process, or architectural gap this project addresses.]
+This solution enables organizations to proactively manage user access, strengthen security controls, and maximize Salesforce license efficiency through automated lifecycle management of inactive users..]
 
 ## See it in Action
 ![Demo GIF or Image](./assets/demo.gif)
