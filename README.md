@@ -17,8 +17,6 @@ Key features include:
 -Bulkified processing to support large organizations.
 -Compliance with Salesforce security and governance best practices.
 
-
-
 ## The Problem It Solves
 This solution enables organizations to proactively manage user access, strengthen security controls, and maximize Salesforce license efficiency through automated lifecycle management of inactive users..]
 
