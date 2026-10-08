@@ -1,0 +1,33 @@
+{
+	"tabWidth": 2,
+	"useTabs": true,
+	"trailingComma": "none",
+	"xmlWhitespaceSensitivity": "ignore",
+	"overrides": [
+		{
+			"files": "**/*.cls",
+			"options": {
+				"parser": "apex",
+				"apexInsertFinalNewline": false,
+				"printWidth": 120
+			}
+		},
+		{
+			"files": "*.xml",
+			"options": {
+				"parser": "xml",
+				"xmlSelfClosingSpace": true
+			}
+		},
+		{
+			"files": "*-meta.xml",
+			"options": {
+				"parser": "xml",
+				"useTabs": false,
+				"xmlSelfClosingSpace": false,
+				"tabWidth": 4
+			}
+		}
+	],
+	"plugins": ["prettier-plugin-apex", "@prettier/plugin-xml"]
+}
